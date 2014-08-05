@@ -35,19 +35,19 @@ var tagSearch = function(tagselection){
 var tagDisplay = function(){
 	console.log("DISPLAYING: ");
 	if (img1.tagboolean === true){
-		console.log(img1.title);
+		document.write(img1.title);
 	};
 	if (img2.tagboolean === true){
-		console.log(img2.title);
+		document.write(img2.title);
 	};
 	if (img3.tagboolean === true){
-		console.log(img3.title);
+		document.write(img3.title);
 	};
 };
 
-var img1 = new pfimg("/portfolio/selfportrait.jpeg", "Self Portrait", "January 2012", "Portrait juxtaposition art wow k", ["Digital", "Portraiture", "New"]);
-var img2 = new pfimg("/portfolio/selfportrait2.jpeg", "Another title", "Some date", "asdjaslkdjalk", ["Digital", "Landscape", "Old"]);
-var img3 = new pfimg("/portfolio/selfportrait3.jpeg", "Another title 2", "Some date", "asdjaslkdjalk", ["Digital", "Landscape", "Old"]);
+var img1 = new pfimg("/portfolio/selfportrait.jpeg", "Test title 1", "January 2012", "Portrait juxtaposition art wow k", ["Digital", "Portraiture", "New"]);
+var img2 = new pfimg("/portfolio/selfportrait2.jpeg", "Test title 2", "Some date", "asdjaslkdjalk", ["Digital", "Landscape", "Old"]);
+var img3 = new pfimg("/portfolio/selfportrait3.jpeg", "Test title 3", "Some date", "asdjaslkdjalk", ["Digital", "Landscape", "Old"]);
 
 
 tagSearch(["Landscape"]);
