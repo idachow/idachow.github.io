@@ -1,7 +1,4 @@
-//   logs image information (tags listed per image),
-//   uses selected tags (prob from some order tbd)
-//   (created links on page) to determine which 
-//   images to correspondingly display
+//   awfully manual
 
 function pfimg (url, title, date, description, tags) {
 	this.url = url;
