@@ -94,12 +94,12 @@ table {
 			text-align: center;
 			line-height: 30px;}
 		.topnav a:hover {
-			border-bottom:thin solid #e1e2ab;
+			border-bottom:thin solid #cecf9d;
 			margin-right: 30px;
 			margin-left: 30px;
 			margin-top: 5px;
 			margin-bottom: 5px;
-			color: #444444;}
+			color: #aaaaaa;}
 
 		/* Site Layout CSS */
 
