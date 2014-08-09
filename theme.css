@@ -21,7 +21,21 @@
 
 		 /* Navigation Bar */
 
-		 .topnav {}
+		 /*#navbox {
+		width: 100%;
+		margin-bottom: 50px;
+		background: #ffffff;
+		overflow: hidden;
+		padding: 0px;
+		}*/
+
+		 .topnav {
+		width: 100%;
+		margin-bottom: 50px;
+		background: #ffffff;
+		overflow: hidden;
+		padding: 0px;
+		 }
 		 .topnav a:active, .topnav a:link, .topnav a:visited {
 			/*display: block; helpful for other nav*/
 			color: #9e9e9e;
