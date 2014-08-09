@@ -32,8 +32,7 @@
 		 .topnav {
 		width: 100%;
 		margin-bottom: 50px;
-		background: #ffffff;
-		opacity: 50%;
+		background: rgba(255, 255, 255, 0.75);
 		overflow: hidden;
 		padding: 0px;
 		 }
