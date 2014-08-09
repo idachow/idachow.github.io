@@ -108,6 +108,14 @@ table {
 			background: url(/img_site/sitebg.jpg);
 			font-size:5pt;}
 
+		html { 
+  		background: url(img_art/treegirl.jpg) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		}
+
 		/* Image Layout CSS */
 
 		#indexbtmimg {
