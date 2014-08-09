@@ -80,7 +80,7 @@ table {
 		margin-bottom: 50px;
 		background: rgba(255, 255, 255, 0.75);
 		overflow: hidden;
-		padding: 0px;
+		padding: 50px;
 		 }
 		 .topnav a:active, .topnav a:link, .topnav a:visited {
 			/*display: block; helpful for other nav*/
