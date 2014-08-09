@@ -16,8 +16,6 @@
 	<body>
 		<div class="topnav">
 			<center>
-				<img src="img_site/sitelogo.jpg" style="vertical-align:middle">
-
 				<P>
 				<a href="index.html">&nbsp;&nbsp;HOME&nbsp;&nbsp;</a> 
 				<a href="aboutme.html">&nbsp;&nbsp;ABOUT ME&nbsp;&nbsp;</a> 
