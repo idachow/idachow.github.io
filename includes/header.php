@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php echo '<!DOCTYPE html>
 
 		<html>
 
@@ -8,7 +8,7 @@
 		<meta name="description" content="Personal website and portfolio for Ida Chow" />
 		<meta name="keywords" content="Ida Chow" />
 		<meta name="author" content="Ida Chow" />
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" href="theme.css" media="screen" />
 	</head>
 
@@ -29,4 +29,5 @@
 
 		<div id="headerlinebreak">
 			&nbsp;
-		</div>
+		</div> ';
+		?>
