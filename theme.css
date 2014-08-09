@@ -85,7 +85,7 @@ table {
 		 }
 		 .topnav a:active, .topnav a:link, .topnav a:visited {
 			/*display: block; helpful for other nav*/
-			color: #d7d7d7;
+			color: #bbbbbb;
 			text-decoration: none;
 			margin-right: 30px;
 			margin-left: 30px;
@@ -94,12 +94,12 @@ table {
 			text-align: center;
 			line-height: 30px;}
 		.topnav a:hover {
-			border-bottom:thin solid #f4f5b4;
+			border-bottom:thin solid #e1e2ab;
 			margin-right: 30px;
 			margin-left: 30px;
 			margin-top: 5px;
 			margin-bottom: 5px;
-			color: #222222;}
+			color: #444444;}
 
 		/* Site Layout CSS */
 
