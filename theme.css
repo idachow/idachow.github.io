@@ -1,49 +1,3 @@
-		/* pd code RESET */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 		/* Default Font Settings */
 
 		body{
@@ -67,25 +21,10 @@ table {
 
 		 /* Navigation Bar */
 
-		 /*#navbox {
-		width: 100%;
-		margin-bottom: 50px;
-		background: #ffffff;
-		overflow: hidden;
-		padding: 0px;
-		}*/
-
-		 .topnav {
-		width: 100%;
-		margin-bottom: 0px;
-		background: rgba(255, 255, 255, .4);
-		overflow: hidden;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		 }
+		 .topnav {}
 		 .topnav a:active, .topnav a:link, .topnav a:visited {
 			/*display: block; helpful for other nav*/
-			color: #bbbbbb;
+			color: #9e9e9e;
 			text-decoration: none;
 			margin-right: 30px;
 			margin-left: 30px;
@@ -94,12 +33,12 @@ table {
 			text-align: center;
 			line-height: 30px;}
 		.topnav a:hover {
-			border-bottom:thin solid #cecf9d;
+			border-bottom:thin solid #999999;
 			margin-right: 30px;
 			margin-left: 30px;
 			margin-top: 5px;
 			margin-bottom: 5px;
-			color: #aaaaaa;}
+			color: #333333;}
 
 		/* Site Layout CSS */
 
@@ -107,14 +46,6 @@ table {
 			width:100%;
 			background: url(/img_site/sitebg.jpg);
 			font-size:5pt;}
-
-		html { 
-  		background: url(img_art/treegirl.jpg) no-repeat center center fixed; 
-		  -webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
-		}
 
 		/* Image Layout CSS */
 
