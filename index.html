@@ -1,56 +1,47 @@
 <!DOCTYPE html>
-
-		<html>
-
-		<head>
-		<!-- php? -->
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="Personal website and portfolio for Ida Chow" />
-		<meta name="keywords" content="Ida Chow" />
-		<meta name="author" content="Ida Chow" />
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="theme.css" media="screen" />
-	</head>
-
-
-	<body>
-		<div class="topnav">
-			<center>
-				<img src="img_site/sitelogo.jpg" style="vertical-align:middle">
-
-				<P>
-				<a href="index.html">&nbsp;&nbsp;HOME&nbsp;&nbsp;</a> 
-				<a href="aboutme.html">&nbsp;&nbsp;ABOUT ME&nbsp;&nbsp;</a> 
-				<a href="current.html">&nbsp;&nbsp;CURRENT PROJECTS&nbsp;&nbsp;</a> 
-				<a href="portfolio.html">&nbsp;&nbsp;PORTFOLIO&nbsp;&nbsp;</a> 
-				<a href="contact.html">&nbsp;&nbsp;CONTACT&nbsp;&nbsp;</a>
-
-			</center>
-
-		</div>
-
-		<div id="headerlinebreak">
-			&nbsp;
-		</div><!--header: link to css, heading bar, bar, 1p-->
 <html>
+
+
 <head>
-<title>Ida Chow 03</title> 
-<!--#include virtual="header.html" -->
+    <meta charset="utf-8">
+    <title>Exploring the IoT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="css/mystyle.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/Morphext/dist/morphext.css">
+    <script src="bower_components/Morphext/dist/morphext.js"></script>
+</head>
 
-<!--body of page-->
+<body>
+    <div id="navbar">
+    </div>
 
-<center>
-	<P></P><P></P><P></P><P></P>
+    <div id="indexintro">
+        <h5>The "Internet of Things":</h5>
+        <h5><span id="js-rotating">embedded tech, hci, smart objects, data collection, connected objects</span></h5>
+    </div>
 
-<P>
-Happy <!--#config timefmt="%A" --> <!--#echo var="DATE_LOCAL" -->!
-</P>
 
-<P>
-<i>an exploration of art & the interactive</i>	
-</P>
-	</center>
 
-<!--footer-->
+    <!--javascript -->
+    <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/myscript.js"></script>
+        <Script type="text/javascript"><!--
+        $("#js-rotating").Morphext({
+            // The [in] animation type. Refer to Animate.css for a list of available animations.
+            animation: "zoomInRight",
+            // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+            separator: ",",
+            // The delay between the changing of each phrase in milliseconds.
+            speed: 3000,
+            complete: function () {
+                // Called after the entrance animation is executed.
+            }
+        });
+    //--></script>
 </body>
+
 </html>
