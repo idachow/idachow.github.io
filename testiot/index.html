@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Exploring the IoT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="css/mystyle.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/Morphext/dist/morphext.css">
+    <script src="bower_components/Morphext/dist/morphext.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+    </div>
+
+    <div id="indexintro">
+        <h5>The "Internet of Things":</h5>
+        <h5><span id="js-rotating">embedded tech, hci, smart objects, data collection, connected objects</span></h5>
+    </div>
+
+
+
+    <!--javascript -->
+    <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/myscript.js"></script>
+        <Script type="text/javascript"><!--
+        $("#js-rotating").Morphext({
+            // The [in] animation type. Refer to Animate.css for a list of available animations.
+            animation: "zoomInRight",
+            // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+            separator: ",",
+            // The delay between the changing of each phrase in milliseconds.
+            speed: 3000,
+            complete: function () {
+                // Called after the entrance animation is executed.
+            }
+        });
+    //--></script>
+</body>
+
+</html>
