@@ -5,17 +5,16 @@
 /***** body stuff *****/
 
 html {
-			background: url(/img/home-base.jpg) no-repeat center center fixed; 
-
+			/*background: url(/img/home-base.jpg) no-repeat center center fixed;*/
+			/*
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
-			background-size: cover;
+			background-size: cover;*/
 		}
 
 body {
-	background-color: transparent;
-	font-family: 'Lato', sans-serif;
+	font-family: "Tahoma", ;
 }
 
 h2 {
@@ -23,26 +22,26 @@ h2 {
 	padding-left:20px;
 }
 
-h5 {
-	font-size:5em;
-	color:#fff;
+h6 {
+	font-size:1em;
+	color:#aaa;
 }
 
 @media(max-width:940px){
 
-    h5 {font-size:4em}
+    h6 {font-size:1em}
 
 }
 
 @media(max-width:767px){
 
-    h5 {font-size:3em}
+    h6 {font-size:1em}
 
 }
 
 @media(max-width:500px){
 
-    h5 {font-size:2em}
+    h6 {font-size:2em}
 
 }
 
@@ -110,11 +109,11 @@ h5 {
 /****** nav ******/
 
 a {
-	color: #F07900;
+	color: #aaa;
 }
 
 a:hover{
-	color:#fff;
+	color:#555;
 }
 
 a.mainnav {
