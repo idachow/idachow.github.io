@@ -14,7 +14,9 @@ html {
 		}
 
 body {
-	font-family: "Tahoma", ;
+	font-family: "Inconsolata";
+	font-size: 1.25em;
+	color:#aaa;
 }
 
 h2 {
@@ -41,7 +43,7 @@ h6 {
 
 @media(max-width:500px){
 
-    h6 {font-size:2em}
+    h6 {font-size:1em}
 
 }
 
@@ -73,9 +75,23 @@ h6 {
 
 #indexintro {
 	position: fixed;
-	top: 50%;
+	top: 45%;
 	/*background: rgba(255,255,255, 0.85);*/
 	padding: 10px;
+	padding-right: 10%;
+	padding-left: 10%
+}
+
+.middling {
+	position: fixed;
+	top:45%;
+	padding-right: 10%;
+	padding-left: 10%
+}
+
+.foliocontent {
+	position: fixed;
+	top:5%;
 	padding-right: 10%;
 	padding-left: 10%
 }
@@ -109,11 +125,12 @@ h6 {
 /****** nav ******/
 
 a {
-	color: #aaa;
+	color: ##60AB88;
 }
 
 a:hover{
-	color:#555;
+	color:#92CFC6;
+	text-decoration: none;
 }
 
 a.mainnav {
@@ -132,4 +149,59 @@ a.mainnav:hover {
     border-bottom: 1px solid #ffd396;
     border-radius: 0;
     padding-bottom: 1px;
+}
+
+/**lightbox**/
+.thumb {
+    display: inline-block;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+}
+
+.thumb img {
+    display: block; /* Otherwise it keeps some space around baseline */
+    min-width: 100%;    /* Scale up to fill container width */
+    min-height: 100%;   /* Scale up to fill container height */
+    -ms-interpolation-mode: bicubic; /* Scaled images look a bit better in IE now */
+}
+
+#lightbox {
+	padding-bottom:20px;
+	position:relative;
+}
+
+#folioGallery img {
+	margin: 10px;
+	width:20%;
+	height:auto;
+	opacity:.65;
+}
+
+#folioGallery img:hover {
+	margin: 10px;
+	width:20%;
+	height:auto;
+	opacity:.85;
+}
+
+#overlay {
+	background: rgba(0,0,0,0.75);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	display:none;
+	text-align: center;
+}
+
+
+#overlay img {
+	margin-top: 5%;
+	max-height:75%;
+}
+
+#overlay p {
+	color:#fff;
 }

@@ -9,50 +9,89 @@ $(function(){
 /****gettingstarted****/
 
 $(function(){
+    $navarrow = ("<span></span>");
+
+	$.hideAll = function () {
+		$("#initialtext").hide();
+		$("#interactivity").hide();
+		$("#electronics").hide();
+		$("#programming").hide();
+        $("button").attr("class", "btn");
+	};
+
 	$("#interactivity").hide();
 	$("#electronics").hide();
 	$("#programming").hide();
-	$("#links").hide();
-	$("#projects").hide();
-	$("#inspa").hide();
-});
 
-$(function(){
+
+
 	$( "#buttoninteractivity" ).click(function() {
+			$.hideAll();
 	        $( "#interactivity" ).fadeToggle("slow", "linear");
+            $(this).attr("class", "btn btn-warning");
 	});
-});
 
-$(function(){
+
+
 	$( "#buttonelectronics" ).click(function() {
+			$.hideAll();
 	        $( "#electronics" ).fadeToggle("slow");
+            $(this).attr("class", "btn btn-warning");
+	});
+
+	$( "#buttonprogramming" ).click(function() {
+			$.hideAll();
+	        $( "#programming" ).fadeToggle("slow");
+            $(this).attr("class", "btn btn-warning");
 	});
 });
 
-$(function(){
-	$( "#buttonprogramming" ).click(function() {
-	        $( "#programming" ).fadeToggle("slow");
-	});
-}); 
-
-//*resources*//
+/****gallery lightbox***/
 
 $(function(){
-	$( "#buttonlinks" ).click(function() {
-	        $( "#links" ).fadeToggle("slow");
-	});
-}); 
 
-//****projects****//
+	var $overlay = $('<div id="overlay"></div>');
+    var $image = $("<img>");
+    var $caption = $("<p></p>");
 
-$(function(){
-	$( "#buttoninspa" ).click(function() {
-	        $( "#inspa" ).fadeToggle("slow");
-	});
-}); 
+     /**text attached to image attached to overlay attached to body*/
+    $overlay.append($image);
+    $overlay.append($caption);
+	$("body").append($overlay);
 
-$(function(){
-	$( "#buttonprojects" ).click(function() {
-	        $( "#projects" ).fadeToggle("slow");
+	$("#folioGallery a").click(function(event){
+		event.preventDefault();
+		var imgLoc = $(this).children("img").attr("src");
+        $image.attr("src",imgLoc);
+		$overlay.show();
+
+        var captionText = $(this).children("img").attr("alt");
+        $caption.text(captionText);
+
+        /*need a link out to original source!*/
 	});
-}); 
+
+    /*remove overlay w click*/
+    $overlay.click(function(){
+        $overlay.hide();
+    });
+
+});
+
+
+//***mobile nav****//
+
+$(document).ready(function(){
+
+    $(window).scroll(function(){
+        var window_top = $(window).scrollTop() + 10; // 
+        var div_top = $('#subnav').offset().top;
+            if (window_top > div_top) {
+                $('nav').addClass('stick');
+            } else {
+                $('nav').removeClass('stick');
+            }
+    });
+
+});
+
