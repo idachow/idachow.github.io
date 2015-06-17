@@ -175,14 +175,14 @@ a.mainnav:hover {
 	margin: 10px;
 	width:20%;
 	height:auto;
-	opacity:.65;
+	opacity:.75;
 }
 
 #folioGallery img:hover {
 	margin: 10px;
 	width:20%;
 	height:auto;
-	opacity:.85;
+	opacity:1;
 }
 
 #overlay {
@@ -199,9 +199,10 @@ a.mainnav:hover {
 
 #overlay img {
 	margin-top: 5%;
-	max-height:75%;
+	max-height:80%;
+	max-width:95%;
 }
 
 #overlay p {
-	color:#fff;
+	color:#aaa;
 }
