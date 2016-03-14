@@ -217,10 +217,10 @@ a.mainnav:hover {
 
 body {
 	background: url("/img/portfolio/2013-blue.jpg") #58B6C4 fixed;
-	font: 12pt "Inconsolata";
+	font: 10pt "Inconsolata";
 }
 .info {
-	width: 800px;
+	width: 600px;
 	background: #FFF;
 	text-align: justify;
 	padding: 50px;
