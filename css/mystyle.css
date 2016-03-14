@@ -206,3 +206,109 @@ a.mainnav:hover {
 #overlay p {
 	color:#aaa;
 }
+
+
+
+
+
+
+
+
+
+body {
+	background: url("/img/portfolio/2013-blue.jpg") #58B6C4 fixed;
+	font: 12pt "Inconsolata";
+}
+.info {
+	width: 800px;
+	background: #FFF;
+	text-align: justify;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	color: #666;
+}
+.stat {
+	background: #e1e1e1;
+	text-align: center;
+	padding: 50px 25px 50px 25px;
+	width: 150px;
+	height: 100px;
+	float: right;
+	margin-left: 25px;
+}
+.teams {
+	background: #e1e1e1;
+	width: 200px;
+	height: 150px;
+	padding: 10px;
+	border: 20px solid white;
+	display: table-cell;
+	text-align: center;
+}
+.general {
+	background: #e1e1e1;
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	display: table-cell;
+	text-align: center;
+}
+.council {
+	background: #e1e1e1;
+	width: 250px;
+	height: 250px;
+	padding: 10px;
+	border: 10px solid white;
+	display: table-cell;
+	text-align: center;
+}
+#nav {
+	background: #120516;
+	width: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#nav a {
+	font: 12pt "Inconsolata";
+	color: #FFF;
+}
+h2 {
+	font: 16pt "Inconsolata";
+	color: #333;
+	margin-top: 0;
+}
+h3 {
+	font: 10pt "Inconsolata";
+}
+b {
+	color: #C3494E;
+}
+i {
+	color: #018BA1;
+}
+a {
+	color: #A68FA9;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	color: #FFF4B3;
+	text-decoration: none;
+}
+.one {
+	color: #7EA79D;
+}
+.two {
+	color: #678792;
+}
+textarea {
+	background: #F2D2E1;
+	font: 12pt Arial;
+	border: 1px solid #C1276D;
+	color: #C3494E;
+}
