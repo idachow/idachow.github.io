@@ -216,8 +216,11 @@ a.mainnav:hover {
 
 
 body {
-	background: url("/img/portfolio/2013-blue.jpg") #58B6C4 fixed;
+	background: url("/img/portfolio/2013-blue.jpg") #000000;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 	font: 10pt "Inconsolata";
+    background-size: 100%;
 }
 .info {
 	width: 600px;
