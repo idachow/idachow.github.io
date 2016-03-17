@@ -10,7 +10,7 @@ def cdf_an_idea(idea_nw):
     """Given an idea represented as edge weights, return its empirical cdf
     """
     # draw from statsmodels ECDF
-    return None;
+    return None
 
 def ideas_to_cdf(idea_network):
     """Expect result of nlp.ideas_to_network(), i.e., a set of ideas represented as edge weights
@@ -22,7 +22,7 @@ def average_distribution(ideas_cdf):
     This is for creating the baseline "prototypical" distribution.
     Per toubia, average at each edge weight value across all ideas.
     """
-    return None;
+    return None
 
 def idea_prototypicality(ideas_cdf, baseline_avg_cdf):
     """Given a set of cdfs (of ideas), compute a prototypicality score for each idea
@@ -36,7 +36,7 @@ def idea_prototypicality(ideas_cdf, baseline_avg_cdf):
     return 
 
 def main():
-    return None;
+    return None
 
     # create the baseline cdf
         # call networks.ideas_to_network()
