@@ -1,37 +1,73 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-
-
-body{
-    background: #000;
-    font-family: 'Open Sans';
+      
+      html, body, #demo {
+    min-height: 100% !important;
+    height: 100%;
 }
 
-.wrapper{
-    width: 92.72727272727273%;
-    margin: 0 auto;
-}
 
-header ul.social li a,
-.main .work a .caption,
-header nav ul li a{
-    transition:all .1s linear;
-    -webkit-transition:all .1s linear;
-    -moz-transition:all .1s linear;
-    -o-transition:all .1s linear;
-}
 
-h1, h2, h3, h4, h5 ,h6{
-    color: #4b4848;
-    font-family: "raleway-regular", arial;
-    letter-spacing: 1px;
-}
+    body{
+        font-family: 'Open Sans';
+    }
 
-h1              { font-size: 2em; margin: .67em 0; font-family: 'Merriweather'; }
-h2              { font-size: 1.5em; margin: .75em 0 }
-h3              { font-size: 1.17em; margin: .83em 0 }
-h5              { font-size: .83em; margin: 1.5em 0 }
-h6              { font-size: .75em; margin: 1.67em 0 }
-h1, h2, h3, h4,
-h5, h6          { font-weight: bolder }
+    h1 { font-size: 2.5em; margin: 1em 0; font-family: 'Merriweather'; color:#F5A623; }
+      
+      h2 { font-size: 1.5em; margin: .67em 0; font-family: 'Merriweather'; color:"#333";}
+    
+    * {
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+
+     * {
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+
+    body {
+      background: #fff;
+      padding: 0px;
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    #bodycopy {
+      width: 90%;
+      margin-left:5%;
+
+      visibility: ;
+      margin: 100px auto;
+      background: #fff;
+/*
+      cursor: hand;
+      cursor: -moz-grab;
+      cursor: -webkit-grab;
+      cursor: grab;
+*/
+    }
+
+    #demo .item {
+      background: #fff;
+    }
+
+    #demo .item:nth-child(2n+0) {
+      background: #fff;
+    }
+
+    a, a:visited, a:active
+    {
+        color: #6f9dbc;
+        text-decoration:none;
+    }
+
+    a:hover
+    {
+        background-color: ;
+        color: #6f9dbc;
+        text-decoration: underline #F5A623 ;
+    }
+
