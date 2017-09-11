@@ -1,73 +1,370 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+@import url('https://fonts.googleapis.com/css?family=Volkorn');
 
-      
-      html, body, #demo {
+
+#cover {
+    background: url("to/your/ajaxloader.gif") no-repeat scroll center center #FFF;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+html, body, #demo {
     min-height: 100% !important;
     height: 100%;
 }
 
 
 
-    body{
-        font-family: 'Open Sans';
-    }
 
-    h1 { font-size: 2.5em; margin: 1em 0; font-family: 'Merriweather'; color:#F5A623; }
-      
-      h2 { font-size: 1.5em; margin: .67em 0; font-family: 'Merriweather'; color:"#333";}
+body{
+    font-family: 'Open Sans';
+    color:#FFF;
+    font-size: 2.1em;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  color:#F5A623; 
+  font-family: "Montserrat", sans-serif;
+}
+
     
-    * {
-      padding: 0;
-      margin: 0;
-      border: 0;
-    }
 
-     * {
-      padding: 0;
-      margin: 0;
-      border: 0;
-    }
+h2 { 
+    font-size: 2em; 
+    margin: .67em 0; 
+    font-family: 'Merriweather'; 
+    color:"#333";
+    font-weight:bold;}
+    
+h3 {
+    font-size: 1.2em;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color:#F5A623; 
+}
 
-    body {
-      background: #fff;
-      padding: 0px;
-      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
+h4 {    text-decoration: none;
+    color:#bbb;
+    font-style: italic;
+    font-family: "Droid Sans";
+    font-size:.7em;
+    padding-right: 0%;
+    font-weight: none;}
 
-    #bodycopy {
-      width: 90%;
-      margin-left:5%;
+#bodycopy {
+    width: 100%;
+    height:100%;
 
-      visibility: ;
-      margin: 100px auto;
-      background: #fff;
+    visibility: ;
+    color: #888;
+    background: white;
+    font-family: "Droid Sans", serif;
+    font-weight: 300;
+    font-size:.7em;
+    -webkit-font-smoothing: antialiased;
+    /*
+    cursor: hand;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    cursor: grab;
+    */
+}
+
+    #heighted 
+{ height: 100%;}
+
+
+i 
+{
+    text-decoration: none;
+    font-style: normal;
+    font-family: "Montserrat";
+    padding-right: 1%;
+    font-weight: bold;
+}
+
+u
+{
+    text-decoration: none;
+    font-style: italic;
+    font-family: "Montserrat";
+    padding-right: 1%;
+    font-weight: ;
+}
+
+
+a, a:visited, a:active
+{
+    color: #6f9dbc;
+    text-decoration:none;
+}
+
+a:hover
+{
+    background-color: ;
+    color: #6f9dbc;
+    text-decoration: underline #F5A623 ;
+}
+
+
+
+
+a[ id= "folio" ]:target ~ #main article.panel {
+    -webkit-transform: translateY( 100% );
+    transform: translateY( 100% );
+}
+
+/*// MQ trigger*/
+@mixin small {
+  @media only screen and (max-width: 766px) {
+    @content;
+  }
+}
 /*
-      cursor: hand;
-      cursor: -moz-grab;
-      cursor: -webkit-grab;
-      cursor: grab;
+
+// colores
+$color: #8f8f8f;
+$color2: #e8f380;
 */
-    }
+/*
 
-    #demo .item {
-      background: #fff;
-    }
+// Navigation
+*/
+.main_h {
+  position: fixed;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
+  @include small {
+    padding-top: 25px;
+  }
+}
 
-    #demo .item:nth-child(2n+0) {
-      background: #fff;
-    }
 
-    a, a:visited, a:active
-    {
-        color: #6f9dbc;
-        text-decoration:none;
-    }
+.img-center {align-self: center;}
 
-    a:hover
-    {
-        background-color: ;
-        color: #6f9dbc;
-        text-decoration: underline #F5A623 ;
+.main_hh {
+  position: fixed;
+    z-index: 999;
+  background-color: #fff;
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 6px;
+    max-height: 70px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.folio-link a
+{
+    color: #fff;
+}
+
+.folio-break 
+{
+    padding:2.5%;
+    padding-top:5%;
+    padding-bottom: 5%;
+}
+
+.no-break
+{
+    position: absolute; 
+    top: -100px;
+}
+
+.folio-clr-blue
+{
+    
+    background-color:#3a5f6c;
+}
+
+.folio-txt-white
+{
+    color:white;
+    
+    
+}
+
+
+.folio-spread
+{
+    height:100%;
+}
+
+.open-nav {
+  max-height: 400px !important;
+  .mobile-toggle {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid lighten($color, 30%);
+}
+
+.logo {
+  width: 50px;
+  font-size: 25px;
+  color: #F5A623;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 10px;
+  @include small {
+    float: none;
+  }
+}
+
+nav {
+  float: right;
+  width: 60%;
+  @include small {
+    width: 100%;
     }
+}
+
+  ul {
+    list-style: none;
+    overflow: hidden;
+    text-align: right;
+    float: right;
+    @include small {
+      padding-top: 10px;
+      margin-bottom: 22px;
+      float: left;
+      text-align: center;
+      width: 100%;
+    }
+}
+
+li {
+      display: inline-block;
+      margin-left: 35px;
+      line-height: 1.5;
+      @include small {
+        width: 100%;
+        padding: 7px 0;
+        margin: 0;
+      }
+    }
+  }
+
+
+.btn-pw
+{
+    font-family: "Montserrat";
+    padding: 10px;
+    background-color: #fff;
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  @include small {
+    display: block;
+  }
+
+  span {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    border-radius: 1000px;
+    background: $color;
+    display: block;
+  }
+}
+
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+.img-lighten {opacity:.2; }
+
+
+
+.top-white 
+{ top:10%;}
+
+.top-white-otherpg
+{ top: 15%;}
+
+/* covers css */
+
+
+.fade-display:hover img {
+   -webkit-filter: brightness(30%);
+   filter: brightness(30%);
+}
+
+.fade-display:hover .floating-text {
+    opacity: 1;
+}
+
+.faete {
+   -webkit-transition: all .25s ease;
+   -moz-transition: all .25s ease;
+   -o-transition: all .25s ease;
+   -ms-transition: all .25s ease;
+   transition: all .25s ease;
+}
+
+.make-relative {position: relative; height:50%; overflow:hidden;}
+
+.floating-text {position: absolute; 
+    opacity: 0;
+    text-align: center;
+    top: 50%; left:50%;
+    transform: translateX(-50%) translateY(-50%);}
+
+.background-pic {display: block; width:190%;}
+
+.folio-head-img {height:100%; overflow:hidden;}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
 
