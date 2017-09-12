@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+
+#carousel {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.display-picture {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity 1s;
+    z-index: 0;
+}
+
+.current-picture {
+    opacity: 1;
+}
+
+.image-button {
+    position: absolute;
+    color: white;
+    top: 50%;
+    z-index: 5;
+    margin: 0px;
+    transition: all 0.5s;
+    font-size: 25px;
+    background-color: #AAA;
+    opacity: 0.75;
+}
+
+.image-button:hover {
+    cursor: pointer;
+    background: #222;
+}
+
+.next {
+    padding: 16px;
+    left: 100%;
+    transform: translateX(-100%) translateY(-50%);
+}
+
+.prev {
+    padding: 16px;
+    transform: translateY(-50%);
+
+}

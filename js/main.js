@@ -48,9 +48,37 @@ $(window).load(function(){
 // scroll to anchor
 
 $(document).ready(function() {
-   $("#scrollin").click(function() {
-      $("html, body").animate({
-          scrollTop: $(window).height()
-      }, 800); 
-   });
+    $(".clickscroll").click(function(event) {
+        console.log("clicked");
+        var scroll = $(window).scrollTop();
+        $('html, body').animate({
+            scrollTop: ($(window).height() + scroll)
+        }, 800);
+    });
 });
+
+
+// image thing
+
+var i = 0;
+function nextPicture() {
+    var pictures = document.getElementsByClassName("display-picture");
+
+    var currentPic = pictures[i];
+    i = (i + 1) % pictures.length;
+
+    var nextPic = pictures[i];
+    currentPic.classList.remove("current-picture");
+    nextPic.classList.add("current-picture");
+}
+
+function prevPicture() {
+    var pictures = document.getElementsByClassName("display-picture");
+
+    var currentPic = pictures[i];
+    i = (i > 0 ? ((i-1) % pictures.length) : pictures.length - 1);
+    console.log(i);
+    var prevPic = pictures[i];
+    currentPic.classList.remove("current-picture");
+    prevPic.classList.add("current-picture");
+}

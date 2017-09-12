@@ -240,7 +240,7 @@ $color2: #e8f380;
 
 nav {
   float: right;
-  width: 60%;
+  width: 80%;
   @include small {
     width: 100%;
     }
@@ -260,17 +260,31 @@ nav {
     }
 }
 
+
+
+
 li {
-      display: inline-block;
+
+     display: inline-block;
       margin-left: 35px;
-      line-height: 1.5;
-      @include small {
-        width: 100%;
-        padding: 7px 0;
-        margin: 0;
-      }
+    
+          line-height: 1.5;
+
     }
-  }
+
+@media screen and (max-width:360px){
+    
+  li {
+
+     display: inline-block;
+      margin-left: 8px;
+    
+          line-height: 1.5;
+
+    }
+}
+
+
 
 
 .btn-pw
@@ -359,12 +373,74 @@ li {
     top: 50%; left:50%;
     transform: translateX(-50%) translateY(-50%);}
 
-.background-pic {display: block; width:190%;}
+.background-pic {display: block; width:150%;}
+
+.background-pic2 {display: block; width:180%;}
 
 .folio-head-img {height:100%; overflow:hidden;}
 
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
+}
+
+
+
+/* carousel */
+
+
+.carousel {
+    position: relative;
+    width: 90%;
+    height: auto;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.display-picture {
+/*    position: absolute;*/
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity 1s;
+    z-index: 0;
+}
+
+.display-first
+{ position:absolute;}
+
+.current-picture {
+    opacity: 1;
+}
+
+.image-button {
+    position: absolute;
+    color: white;
+    top: 50%;
+    z-index: 5;
+    margin: 0px;
+    transition: all 0.5s;
+    font-size: 25px;
+    background-color: #AAA;
+    opacity: 0.75;
+}
+
+.image-button:hover {
+    cursor: pointer;
+    background: #222;
+}
+
+.next {
+    padding: 16px;
+    left: 100%;
+    transform: translateX(-100%) translateY(-50%);
+}
+
+.prev {
+    padding: 16px;
+    transform: translateY(-50%);
+
 }
 

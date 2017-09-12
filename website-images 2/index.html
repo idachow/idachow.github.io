@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Ida Images</title>
+
+        <script language="javascript">
+            var i = 0;
+            function nextPicture() {
+                var pictures = document.getElementsByClassName("display-picture");
+
+                var currentPic = pictures[i];
+                i = (i + 1) % pictures.length;
+
+                var nextPic = pictures[i];
+                currentPic.classList.remove("current-picture");
+                nextPic.classList.add("current-picture");
+            }
+
+            function prevPicture() {
+                var pictures = document.getElementsByClassName("display-picture");
+
+                var currentPic = pictures[i];
+                i = (i > 0 ? ((i-1) % pictures.length) : pictures.length - 1);
+                console.log(i);
+                var prevPic = pictures[i];
+                currentPic.classList.remove("current-picture");
+                prevPic.classList.add("current-picture");
+            }
+
+        </script>
+    </head>
+    <body>
+        <div id="carousel">
+            <img class="display-picture current-picture" src="images/dog.jpg" onclick="javascript:openLightbox(1);" />
+
+            <img class="display-picture" src="images/beach.jpg" />
+
+            <img class="display-picture" src="images/lion.jpg" />
+
+
+            <a class="prev image-button" onClick="javascript:prevPicture()">&#10094;</a>
+            <a class="next image-button" onClick="javascript:nextPicture()">&#10095;</a>
+        </div>
+
+        <div id="lightbox">
+            <img class="current-lightbox" />
+            <div id="lightbox-tray">
+                <img class="tray-picture" src="images/dog.jpg" />
+
+                <img class="tray-picture" src="images/beach.jpg" />
+
+                <img class="tray-picture" src="images/lion.jpg" />
+            </div>
+        </div>
+    </body>
+</html>

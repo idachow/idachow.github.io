@@ -16,7 +16,30 @@
     <script type="text/javascript" src="js/jqueryscrollTo.min.js"></script>
     <script type="text/javascript" src="js/jquerysmoothScroll.min.js"></script> 
    
+    <script>
+    var i = 0;
+function nextPicture() {
+    var pictures = document.getElementsByClassName("display-picture");
 
+    var currentPic = pictures[i];
+    i = (i + 1) % pictures.length;
+
+    var nextPic = pictures[i];
+    currentPic.classList.remove("current-picture");
+    nextPic.classList.add("current-picture");
+}
+
+function prevPicture() {
+    var pictures = document.getElementsByClassName("display-picture");
+
+    var currentPic = pictures[i];
+    i = (i > 0 ? ((i-1) % pictures.length) : pictures.length - 1);
+    console.log(i);
+    var prevPic = pictures[i];
+    currentPic.classList.remove("current-picture");
+    prevPic.classList.add("current-picture");
+}
+    </script>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     
@@ -45,7 +68,7 @@
                 <li><a href="/about.html" style="color: #888888;
       text-transform: uppercase;
       font-size: 12px;">about</a></li>
-                <li><a href="/work/Resume-IdaChow-F17.pdf"" style="color: #888888;
+                <li><a href="/work/Resume-IdaChow-F17.pdf" style="color: #888888;
       text-transform: uppercase;
       font-size: 12px;">resume</a></li>
 
@@ -162,6 +185,7 @@
                   We were given the original prototype that executed many aspects from the research paper, but seemed to have many other shortcomings in other aspects. In order to truly examine what the issues were, we planned out our user tests. <BR><BR>
                   
                   
+                  
                   <center>
                   <img src="/work/upmc/screenshot1.png" width="75%"><BR><BR>
                   <img src="/work/upmc/screenshot2.png" width="75%"><BR><BR>
@@ -180,9 +204,9 @@
                   
                   <BR><BR>
                       
-                     - Users wanted to feel responsiveness outside of just a tablet - if information was going in, they wanted to have feedback on that. Anything, like a real printed piece of paper, or acknowledgement from staff, would be welcome.
+                     - Users wanted to feel responsiveness outside of just a tablet - if information was going in, they wanted to have feedback on that. Anything, like a real printed piece of paper, or acknowledgement from staff, would be welcome. <BR><BR>
                       
-                      - Forced video watching didn't help many users at all. Some ignored the educational videos, others looked to find a way to skip, and others did manage to find their way around it.
+                      - Forced video watching didn't help many users at all. Some ignored the educational videos, others looked to find a way to skip, and others did manage to find their way around it. <BR><BR>
                       
                       - The desktop-first design of the first iteration of the prototype confused users on iPad, especially those who were already struggling with the tablet interface.
                   
