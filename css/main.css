@@ -195,6 +195,14 @@ $color2: #e8f380;
     background-color:#3a5f6c;
 }
 
+
+
+.folio-clr-black
+{
+    
+    background-color:#333333;
+}
+
 .folio-txt-white
 {
     color:white;
@@ -377,6 +385,10 @@ li {
 
 .background-pic2 {display: block; width:180%;}
 
+.background-pic3 {display: block; width:100%;}
+
+.background-pic4 {display: block; width:220%;}
+
 .folio-head-img {height:100%; overflow:hidden;}
 
 .nopadding {
@@ -444,3 +456,12 @@ li {
 
 }
 
+
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
