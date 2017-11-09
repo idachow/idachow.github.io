@@ -181,6 +181,7 @@ $color2: #e8f380;
     padding:2.5%;
     padding-top:5%;
     padding-bottom: 5%;
+    background-color: #fff;
 }
 
 .no-break
@@ -381,15 +382,20 @@ li {
     top: 50%; left:50%;
     transform: translateX(-50%) translateY(-50%);}
 
-.background-pic {display: block; width:150%;}
+.background-pic100 {display: block; position: absolute; width:150%; left:-25%; top:-50%;}
+
+.background-pic150 {display: block; position: absolute; width:180%; left:-40%; top:-19%;}
 
 .background-pic2 {display: block; width:180%;}
+
+.background-pic120 {display: block; width:120%;}
 
 .background-pic3 {display: block; width:100%;}
 
 .background-pic4 {display: block; width:220%;}
 
-.folio-head-img {height:100%; overflow:hidden;}
+.background-pic-folio {display: block; width:100%; position: absolute;}
+.folio-head-img {height:30%; overflow:hidden;}
 
 .nopadding {
    padding: 0 !important;
